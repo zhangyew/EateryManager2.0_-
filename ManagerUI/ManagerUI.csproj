@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BA6B117-B9CE-4802-98D9-985BC9171CCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagerUI</RootNamespace>
+    <AssemblyName>ManagerUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddConsume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConsume.Designer.cs">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFormAdd.Designer.cs">
+      <DependentUpon>AdminFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminFormUpdate.Designer.cs">
+      <DependentUpon>AdminFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndConsumeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndConsumeForm.Designer.cs">
+      <DependentUpon>EndConsumeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromLodaing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLodaing.Designer.cs">
+      <DependentUpon>FromLodaing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenForm.Designer.cs">
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormAdd.Designer.cs">
+      <DependentUpon>ProductFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductFormUpdate.Designer.cs">
+      <DependentUpon>ProductFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTypeFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PTypeFormAdd.Designer.cs">
+      <DependentUpon>PTypeFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PTypeFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PTypeFormUpdate.Designer.cs">
+      <DependentUpon>PTypeFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomFormAdd.Designer.cs">
+      <DependentUpon>RoomFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomFormUpdate.Designer.cs">
+      <DependentUpon>RoomFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm.Designer.cs">
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsFrom.Designer.cs">
+      <DependentUpon>SystemSettingsFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableFormAdd.Designer.cs">
+      <DependentUpon>TableFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableFormUpdate.Designer.cs">
+      <DependentUpon>TableFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGradeFormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VGradeFormAdd.Designer.cs">
+      <DependentUpon>VGradeFormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VGradeFormUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VGradeFormUpdate.Designer.cs">
+      <DependentUpon>VGradeFormUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipFormAddUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipFormAddUpdate.Designer.cs">
+      <DependentUpon>VipFormAddUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipManagerForm.Designer.cs">
+      <DependentUpon>VipManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vips_Bll.cs" />
+    <EmbeddedResource Include="AddConsume.resx">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFormAdd.resx">
+      <DependentUpon>AdminFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminFormUpdate.resx">
+      <DependentUpon>AdminFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EndConsumeForm.resx">
+      <DependentUpon>EndConsumeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLodaing.resx">
+      <DependentUpon>FromLodaing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenForm.resx">
+      <DependentUpon>OpenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormAdd.resx">
+      <DependentUpon>ProductFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductFormUpdate.resx">
+      <DependentUpon>ProductFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PTypeFormAdd.resx">
+      <DependentUpon>PTypeFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PTypeFormUpdate.resx">
+      <DependentUpon>PTypeFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomFormAdd.resx">
+      <DependentUpon>RoomFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomFormUpdate.resx">
+      <DependentUpon>RoomFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm.resx">
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsFrom.resx">
+      <DependentUpon>SystemSettingsFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableFormAdd.resx">
+      <DependentUpon>TableFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableFormUpdate.resx">
+      <DependentUpon>TableFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGradeFormAdd.resx">
+      <DependentUpon>VGradeFormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VGradeFormUpdate.resx">
+      <DependentUpon>VGradeFormUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipFormAddUpdate.resx">
+      <DependentUpon>VipFormAddUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipManagerForm.resx">
+      <DependentUpon>VipManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{38d7aa58-c95b-449b-86c6-a8073a56e11f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{7CCFE326-6096-4886-8240-2C1E5C925DFD}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{0988C62E-247F-471F-A183-DB509C7A3839}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{53995dbb-9836-4647-ad22-865884fdeb9e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单栏-背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
